@@ -13,7 +13,6 @@ export class BooksController {
 
   @Post()
   createBook(@Body() book:Book):void{
-    console.log("bookd",book)
     this.booksService.createBook(book)
   }
 
